@@ -63,7 +63,7 @@
     </distributionManagement>
 
     <scm>
-        <connection>git://github.com/Hellblazer/Chinese-Whispers.git</connection>
+        <connection>scm:git:git@github.com:federecio/dropwizard-junit.git</connection>
         <url>http://github.com/federecio/dropwizard-junit</url>
     </scm>
 
