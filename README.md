@@ -7,6 +7,28 @@ a JUnit TestRunner that allows to load Dropwizard resources for testing
 How to use it
 -------------
 
+* Add the Maven repository
+
+        <repositories>
+            <repository>
+                <id>dropwizard-junit</id>
+                <url>https://raw.github.com/federecio/dropwizard-junit/mvn-repo/</url>
+            </repository>
+        </repositories>
+
+
+* Add the Maven dependency
+
+        <dependency>
+            <groupId>com.federecio</groupId>
+            <artifactId>dropwizard-junit</artifactId>
+            <version>0.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+* Write your tests
+
     import org.junit.Test;
     import org.junit.runner.RunWith;
 
