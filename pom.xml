@@ -63,7 +63,8 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:federecio/dropwizard-junit.git</connection>
+        <connection>scm:git:git://github.com:federecio/dropwizard-junit.git</connection>
+        <developerConnection>scm:git:git@github.com:federecio/dropwizard-junit.git</developerConnection>
         <url>http://github.com/federecio/dropwizard-junit</url>
     </scm>
 
