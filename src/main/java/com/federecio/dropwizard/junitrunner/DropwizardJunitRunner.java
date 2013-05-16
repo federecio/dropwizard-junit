@@ -24,9 +24,9 @@ public class DropwizardJunitRunner extends BlockJUnit4ClassRunner {
     @Override
     protected Statement classBlock(final RunNotifier notifier) {
         DropwizardTestConfig dropwizardTestConfig = getTestConfigOrFail();
+        URL resource = getYamlConfigFileOrFail(dropwizardTestConfig);
         try {
             service = dropwizardTestConfig.serviceClass().newInstance();
-            URL resource = getClass().getResource(dropwizardTestConfig.yamlFile());
             service.run(new String[]{"server", resource.getFile()});
         } catch (IllegalAccessException e) {
             throw new DropwizardJunitRunnerException("Could not access class or class' constructor on " + dropwizardTestConfig.serviceClass(), e);
@@ -50,5 +50,13 @@ public class DropwizardJunitRunner extends BlockJUnit4ClassRunner {
             }
         }
         throw new DropwizardJunitRunnerException("Test class needs to be annotated with @" + DropwizardTestConfig.class.getSimpleName());
+    }
+
+    private URL getYamlConfigFileOrFail(DropwizardTestConfig dropwizardTestConfig) {
+        URL resource = getClass().getResource(dropwizardTestConfig.yamlFile());
+        if(resource == null) {
+            throw new DropwizardJunitRunnerException("Yaml file not found");
+        }
+        return resource;
     }
 }
