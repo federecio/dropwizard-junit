@@ -20,10 +20,11 @@ How to use it
         <dependency>
             <groupId>com.federecio</groupId>
             <artifactId>dropwizard-junit</artifactId>
-            <version>0.1</version>
+            <version>0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
 
+*Note: you will need to add the necessary junit and dropwizard dependencies to your project*
 
 * Write your tests
 
