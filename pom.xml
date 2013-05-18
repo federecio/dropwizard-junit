@@ -4,7 +4,7 @@
 
     <groupId>com.federecio</groupId>
     <artifactId>dropwizard-junit</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
 
     <developers>
         <developer>
@@ -12,53 +12,6 @@
             <url>http://about.me/federecio</url>
         </developer>
     </developers>
-
-    <properties>
-        <github.global.server>github</github.global.server>
-        <github.repository.name>${project.artifactId}</github.repository.name>
-    </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.8</version>
-                <configuration>
-                    <message>Maven artifacts for ${project.version}</message>
-                    <noJekyll>true</noJekyll>
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
-                    <branch>refs/heads/mvn-repo</branch>
-                    <includes><include>**/*</include></includes>
-                    <repositoryName>dropwizard-junit</repositoryName>
-                    <repositoryOwner>federecio</repositoryOwner>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub ${project.artifactId} Repository</name>
-            <url>https://raw.github.com/federecio/dropwizard-junit/mvn-repo</url>
-        </repository>
-    </distributionManagement>
 
     <scm>
         <connection>scm:git:git://github.com:federecio/dropwizard-junit.git</connection>
