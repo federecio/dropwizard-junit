@@ -18,12 +18,9 @@
     </developers>
 
     <scm>
-<!--        <connection>scm:git:git://github.com:federecio/dropwizard-junit.git</connection>
+        <connection>scm:git:git://github.com:federecio/dropwizard-junit.git</connection>
         <developerConnection>scm:git:git@github.com:federecio/dropwizard-junit.git</developerConnection>
-        <url>http://github.com/federecio/dropwizard-junit</url>-->
-        <connection>scm:git:git://github.com:jochen-szostek/dropwizard-junit.git</connection>
-        <developerConnection>scm:git:git@github.com:jochen-szostek/dropwizard-junit.git</developerConnection>
-        <url>http://github.com/jochen-szostek/dropwizard-junit</url>
+        <url>http://github.com/federecio/dropwizard-junit</url>
     </scm>
 
     <dependencies>
