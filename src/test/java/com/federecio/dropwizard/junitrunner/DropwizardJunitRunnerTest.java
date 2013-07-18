@@ -1,16 +1,15 @@
 package com.federecio.dropwizard.junitrunner;
 
+import com.jayway.restassured.RestAssured;
 import org.eclipse.jetty.http.HttpStatus;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import com.jayway.restassured.RestAssured;
 
 /**
  * @author Federico Recio
  */
 @RunWith(DropwizardJunitRunner.class)
-@DropwizardTestConfig(serviceClass = TestService.class, yamlFile = "/test.yaml")
+@DropwizardTestConfig(applicationClass = TestApplication.class, yamlFile = "/test.yaml")
 public class DropwizardJunitRunnerTest {
 
     @Test

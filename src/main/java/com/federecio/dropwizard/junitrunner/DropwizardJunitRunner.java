@@ -1,21 +1,20 @@
 package com.federecio.dropwizard.junitrunner;
 
-import java.lang.annotation.Annotation;
-import java.net.URL;
-
+import com.codahale.dropwizard.Application;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.InitializationError;
 import org.junit.runners.model.Statement;
 
-import com.yammer.dropwizard.Service;
+import java.lang.annotation.Annotation;
+import java.net.URL;
 
 /**
  * @author Federico Recio
  */
 public class DropwizardJunitRunner extends BlockJUnit4ClassRunner {
 
-    private Service<?> service;
+    private Application<?> application;
 
     public DropwizardJunitRunner(Class<?> testClass) throws InitializationError {
         super(testClass);
@@ -26,20 +25,20 @@ public class DropwizardJunitRunner extends BlockJUnit4ClassRunner {
         DropwizardTestConfig dropwizardTestConfig = getTestConfigOrFail();
         URL resource = getYamlConfigFileOrFail(dropwizardTestConfig);
         try {
-            service = dropwizardTestConfig.serviceClass().newInstance();
-            service.run(new String[]{"server", resource.getFile()});
+            application = dropwizardTestConfig.applicationClass().newInstance();
+            application.run(new String[]{"server", resource.getFile()});
         } catch (IllegalAccessException e) {
-            throw new DropwizardJunitRunnerException("Could not access class or class' constructor on " + dropwizardTestConfig.serviceClass(), e);
+            throw new DropwizardJunitRunnerException("Could not access class or class' constructor on " + dropwizardTestConfig.applicationClass(), e);
         } catch (InstantiationException e) {
-            throw new DropwizardJunitRunnerException("Could not instantiate class " + dropwizardTestConfig.serviceClass(), e);
+            throw new DropwizardJunitRunnerException("Could not instantiate class " + dropwizardTestConfig.applicationClass(), e);
         } catch (Exception e) {
             throw new DropwizardJunitRunnerException(e);
         }
         return super.classBlock(notifier);
     }
 
-    protected Service<?> getService() {
-        return service;
+    protected Application<?> getApplication() {
+        return application;
     }
 
     private DropwizardTestConfig getTestConfigOrFail() {

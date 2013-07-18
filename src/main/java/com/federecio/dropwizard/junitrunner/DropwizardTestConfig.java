@@ -1,11 +1,11 @@
 package com.federecio.dropwizard.junitrunner;
 
+import com.codahale.dropwizard.Application;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import com.yammer.dropwizard.Service;
 
 /**
  * @author Federico Recio
@@ -14,7 +14,7 @@ import com.yammer.dropwizard.Service;
 @Target(ElementType.TYPE)
 public @interface DropwizardTestConfig {
 
-    Class<? extends Service<?>> serviceClass();
+    Class<? extends Application<?>> applicationClass();
 
     String yamlFile();
 }
