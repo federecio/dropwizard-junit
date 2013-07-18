@@ -4,7 +4,11 @@
 
     <groupId>com.federecio</groupId>
     <artifactId>dropwizard-junit</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
+
+    <properties>
+        <dropwizard.version>0.7.0-SNAPSHOT</dropwizard.version>
+    </properties>
 
     <developers>
         <developer>
@@ -20,11 +24,11 @@
     </scm>
 
     <dependencies>
+        <!-- DropWizard -->
         <dependency>
-            <groupId>com.yammer.dropwizard</groupId>
+            <groupId>com.codahale.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
-            <version>0.6.2</version>
-            <scope>provided</scope>
+            <version>${dropwizard.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

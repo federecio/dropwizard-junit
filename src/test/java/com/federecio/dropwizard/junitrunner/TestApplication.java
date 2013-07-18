@@ -1,13 +1,13 @@
 package com.federecio.dropwizard.junitrunner;
 
-import com.yammer.dropwizard.Service;
-import com.yammer.dropwizard.config.Bootstrap;
-import com.yammer.dropwizard.config.Environment;
+import com.codahale.dropwizard.Application;
+import com.codahale.dropwizard.setup.Bootstrap;
+import com.codahale.dropwizard.setup.Environment;
 
 /**
  * @author Federico Recio
  */
-public class TestService extends Service<TestConfig> {
+public class TestApplication extends Application<TestConfig> {
 
     @Override
     public void initialize(Bootstrap<TestConfig> bootstrap) {
@@ -16,6 +16,6 @@ public class TestService extends Service<TestConfig> {
 
     @Override
     public void run(TestConfig configuration, Environment environment) throws Exception {
-        environment.addResource(new TestResource());
+        environment.jersey().register(new TestResource());
     }
 }
