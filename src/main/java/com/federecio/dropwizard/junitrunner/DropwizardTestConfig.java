@@ -1,6 +1,6 @@
 package com.federecio.dropwizard.junitrunner;
 
-import com.codahale.dropwizard.Application;
+import io.dropwizard.Application;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

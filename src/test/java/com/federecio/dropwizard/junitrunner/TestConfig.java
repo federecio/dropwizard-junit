@@ -1,6 +1,6 @@
 package com.federecio.dropwizard.junitrunner;
 
-import com.codahale.dropwizard.Configuration;
+import io.dropwizard.Configuration;
 
 /**
  * @author Federico Recio
