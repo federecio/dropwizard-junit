@@ -1,6 +1,6 @@
 package com.federecio.dropwizard.junitrunner;
 
-import com.codahale.dropwizard.Application;
+import io.dropwizard.Application;
 import org.junit.runner.notification.RunNotifier;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.InitializationError;
