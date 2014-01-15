@@ -20,7 +20,7 @@ How to use it
         <dependency>
             <groupId>com.federecio</groupId>
             <artifactId>dropwizard-junit</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>0.2-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
 
