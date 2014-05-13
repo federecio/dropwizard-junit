@@ -1,7 +1,7 @@
 dropwizard-junit
 ================
 
-a JUnit TestRunner that allows to load Dropwizard resources for testing
+a JUnit TestRunner that allows to load Dropwizard 0.7.0 resources for testing
 
 
 How to use it
@@ -10,8 +10,8 @@ How to use it
 * Add the Maven repository
 
         <repository>
-            <id>federecio-snapshots</id>
-            <url>https://repository-federecio1.forge.cloudbees.com/snapshot/</url>
+            <id>federecio-releases</id>
+            <url>https://repository-federecio1.forge.cloudbees.com/release/</url>
         </repository>
 
 
@@ -20,7 +20,7 @@ How to use it
         <dependency>
             <groupId>com.federecio</groupId>
             <artifactId>dropwizard-junit</artifactId>
-            <version>0.2-SNAPSHOT</version>
+            <version>0.3</version>
             <scope>test</scope>
         </dependency>
 

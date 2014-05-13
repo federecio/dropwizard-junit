@@ -4,7 +4,7 @@
 
     <groupId>com.federecio</groupId>
     <artifactId>dropwizard-junit</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.3</version>
 
     <properties>
         <dropwizard.version>0.7.0</dropwizard.version>
