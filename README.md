@@ -33,3 +33,9 @@ How to use it
         public class YourTest {
             // cool tests here - your Dropwizard service has been started
         }
+
+Contributors
+------------
+
+* Federico Recio ([@federecio](http://twitter.com/federecio))
+* Damien Raude-Morvan ([drazzib](https://github.com/drazzib))
