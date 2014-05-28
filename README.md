@@ -29,7 +29,7 @@ How to use it
 * Write your tests
 
         @RunWith(DropwizardJunitRunner.class)
-        @DropwizardTestConfig(serviceClass = YourServiceClass.class, yamlFile = "/yourconfig.yaml")
+        @DropwizardTestConfig(applicationClass = YourServiceClass.class, yamlFile = "/yourconfig.yaml")
         public class YourTest {
             // cool tests here - your Dropwizard service has been started
         }
