@@ -5,6 +5,11 @@ a JUnit TestRunner that allows to load Dropwizard 0.7.1 resources for testing
 
 __NOTE__: the project's group id has been changed `io.federecio` and therefore all packages have been renamed accordingly
 
+License
+-------
+
+http://www.apache.org/licenses/LICENSE-2.0
+
 How to use it
 -------------
 
