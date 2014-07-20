@@ -1,4 +1,4 @@
-package com.federecio.dropwizard.junitrunner;
+package io.federecio.dropwizard.junitrunner;
 
 /**
  * @author Federico Recio

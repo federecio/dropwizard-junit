@@ -1,4 +1,4 @@
-package com.federecio.dropwizard.junitrunner;
+package io.federecio.dropwizard.junitrunner;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

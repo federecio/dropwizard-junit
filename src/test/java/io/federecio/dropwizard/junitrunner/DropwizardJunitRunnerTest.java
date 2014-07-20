@@ -1,4 +1,4 @@
-package com.federecio.dropwizard.junitrunner;
+package io.federecio.dropwizard.junitrunner;
 
 import com.jayway.restassured.RestAssured;
 import org.eclipse.jetty.http.HttpStatus;

@@ -3,24 +3,17 @@ dropwizard-junit
 
 a JUnit TestRunner that allows to load Dropwizard 0.7.1 resources for testing
 
+__NOTE__: the project's group id has been changed `io.federecio` and therefore all packages have been renamed accordingly
 
 How to use it
 -------------
 
-* Add the Maven repository
-
-        <repository>
-            <id>federecio-releases</id>
-            <url>https://repository-federecio1.forge.cloudbees.com/release/</url>
-        </repository>
-
-
-* Add the Maven dependency
+* Add the Maven dependency (now available in Maven Central!)
 
         <dependency>
-            <groupId>com.federecio</groupId>
+            <groupId>io.federecio</groupId>
             <artifactId>dropwizard-junit</artifactId>
-            <version>0.4</version>
+            <version>0.5</version>
             <scope>test</scope>
         </dependency>
 
@@ -38,4 +31,5 @@ Contributors
 ------------
 
 * Federico Recio ([@federecio](http://twitter.com/federecio))
+* Jochen Szostek ([prefabsoft] (http://prefabsoft.com)
 * Damien Raude-Morvan ([drazzib](https://github.com/drazzib))
