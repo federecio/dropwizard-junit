@@ -4,7 +4,7 @@
 
     <groupId>io.federecio</groupId>
     <artifactId>dropwizard-junit</artifactId>
-    <version>0.6-SNAPSHOT</version>
+    <version>0.6</version>
 
     <name>Dropwizard Junit runner</name>
     <description>A JUnit runner to allow testing of Dropwizard applications</description>
