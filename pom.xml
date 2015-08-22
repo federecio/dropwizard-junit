@@ -4,7 +4,7 @@
 
     <groupId>io.federecio</groupId>
     <artifactId>dropwizard-junit</artifactId>
-    <version>0.7-SNAPSHOT</version>
+    <version>0.7</version>
 
     <name>Dropwizard Junit runner</name>
     <description>A JUnit runner to allow testing of Dropwizard applications</description>
@@ -42,7 +42,7 @@
         <connection>scm:git:git://github.com:federecio/dropwizard-junit.git</connection>
         <developerConnection>scm:git:git@github.com:federecio/dropwizard-junit.git</developerConnection>
         <url>http://github.com/federecio/dropwizard-junit</url>
-      <tag>HEAD</tag>
+      <tag>dropwizard-junit-0.7</tag>
   </scm>
 
 
