@@ -1,8 +1,9 @@
 dropwizard-junit
 ================
 
-a JUnit TestRunner that allows to load Dropwizard 0.8 resources for testing
+A JUnit TestRunner that allows to load Dropwizard 1.0.0 resources for testing
 
+__NOTE__: for Dropwizard 0.8.x compatibility use project version 0.6
 __NOTE__: for Dropwizard 0.7.x compatibility use project version 0.5
 
 License
@@ -18,7 +19,7 @@ How to use it
         <dependency>
             <groupId>io.federecio</groupId>
             <artifactId>dropwizard-junit</artifactId>
-            <version>0.6</version>
+            <version>0.7</version>
             <scope>test</scope>
         </dependency>
 
